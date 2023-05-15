@@ -1,19 +1,22 @@
 const StudentName = ({ index, names }) => {
 
-    console.log('Index is::;', index);
-
-    console.log('Names is::;', names);
-
-
-    const studentArray = ['Manish', 'Ayush', 'Pragesh'];
-
-    const getStudentName = (number) => {
-        return studentArray[number];
+    const getStudentName = () => {
+        const students = names.map(name => {
+            console.log(name);
+            return <p>{name}</p>
+        })
+        console.log(students);
+        return students;
     }
+
+
 
     return (
         <div>
-            <p>Just index: {getStudentName(index)}</p>
+            <ul>
+                {getStudentName()}
+            </ul>
+            
         </div>
         )
 }

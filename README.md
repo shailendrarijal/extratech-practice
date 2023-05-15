@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+###Resources for students:
+Freecodecamp: Here you can go through courses for HTML, CSS, JS and it gives you certificates all for free
+
+###ems to cover in React:
+- useEffect
+- multi-input and handling multi input
+- higher order functions (sort, filter, reduce)
