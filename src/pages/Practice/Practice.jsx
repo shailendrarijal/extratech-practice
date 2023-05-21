@@ -6,7 +6,7 @@ import PracticeApi from './PracticeApi';
 
 const Practice = () => {
 
-    //const names = ['Manish', 'Ayush', 'Pragesh']
+    const names = ['Manish', 'Ayush', 'Pragesh']
     //const [firstName, setFirstName] = useState("");
     //const [lastName, setLastName] = useState("");
     //const [fullName, setFullName] = useState("");
@@ -70,7 +70,6 @@ const Practice = () => {
             <div className="practice-container">
                 <PracticeApi />
             </div>
-
 
             {/*<form className="practice-container">*/}
             {/*    */}{/*<StudentName*/}
@@ -160,6 +159,7 @@ const Practice = () => {
             {/*    */}{/*<p>Selected country is: {countryList}</p>*/}
             {/*    <p>Filtered country: {getFilteredCountry()}</p>*/}
             {/*</form>*/}
+            <StudentName names={names} />
 
 
         </div>
