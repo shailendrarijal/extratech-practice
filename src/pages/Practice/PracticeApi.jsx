@@ -1,20 +1,25 @@
+import { useState, useEffect } from 'react';
+
 const PracticeApi = () => {
 
-    let value = {};
+    const [values, setValues] = useState({});
 
-    //const getPracticeData = () => {
-    //    value = fetch('https://jsonplaceholder.typicode.com/todos/1')
-    //        .then((response) => {
-    //            console.log(response.json());
-    //            return response.json();
-    //        })
+    const getPracticeDataUsingFetch = () => {
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
+            .then((response) => response.json())
+            .then(json => setValues(json));
         
-    //}
+    }
+
+    useEffect(() => {
+        getPracticeDataUsingFetch();
+    }, [])
 
     return (
         <div>
             <ul>
-            {/*    <p>{getPracticeData() }</p>*/}
+                <p>First: {values.title}</p>
+
             </ul>
         </div>
     )
