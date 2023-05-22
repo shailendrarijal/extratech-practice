@@ -19,10 +19,10 @@ const Practice = () => {
     //    lastName: "",
     //    gender: ""
     //})
-    const [declared, setDeclared] = useState({
-        firstCheckbox: false,
-        secondCheckbox: false,
-    });
+    //const [declared, setDeclared] = useState({
+    //    firstCheckbox: false,
+    //    secondCheckbox: false,
+    //});
 
     //const [values, setValues] = useState(initialInfo)
 
@@ -53,12 +53,12 @@ const Practice = () => {
     //    setInfo({ ...info, [name]: value });
     //}
 
-    const handleCheckboxChange = (e) => {
-        console.log("Event is::", e);
+    //const handleCheckboxChange = (e) => {
+    //    console.log("Event is::", e);
 
-        const value = e.target.type === "checkbox" ? e.target.checked : e.target.value;
-        setDeclared({ ...declared, [e.target.name]: value})
-    }
+    //    const value = e.target.type === "checkbox" ? e.target.checked : e.target.value;
+    //    setDeclared({ ...declared, [e.target.name]: value})
+    //}
 
     //useEffect(() => {
     //    getFilteredCountry();
@@ -127,25 +127,25 @@ const Practice = () => {
             {/*    </fieldset>*/}
 
             {/*    <br />*/}
-                <fieldset>
-                    <legend>Declarations: </legend>
-                    <label>Privacy declaration:</label>
-                    <input
-                        type="checkbox"
-                        name="firstCheckbox"
-                        onChange={handleCheckboxChange}
-                />
-                <br/>
-                    <label>Mailing declaration:</label>
-                    <input
-                        type="checkbox"
-                        name="secondCheckbox"
-                        onChange={handleCheckboxChange}
-                    />
-                <p>The first checkbox is {declared.firstCheckbox ? 'checked' : 'unchecked'} </p>
-                <p>The second checkbox is {declared.secondCheckbox ? 'checked' : 'unchecked'} </p>
+                {/*<fieldset>*/}
+                {/*    <legend>Declarations: </legend>*/}
+                {/*    <label>Privacy declaration:</label>*/}
+                {/*    <input*/}
+                {/*        type="checkbox"*/}
+                {/*        name="firstCheckbox"*/}
+                {/*        onChange={handleCheckboxChange}*/}
+                {/*/>*/}
+                {/*<br/>*/}
+                {/*    <label>Mailing declaration:</label>*/}
+                {/*    <input*/}
+                {/*        type="checkbox"*/}
+                {/*        name="secondCheckbox"*/}
+                {/*        onChange={handleCheckboxChange}*/}
+                {/*    />*/}
+                {/*<p>The first checkbox is {declared.firstCheckbox ? 'checked' : 'unchecked'} </p>*/}
+                {/*<p>The second checkbox is {declared.secondCheckbox ? 'checked' : 'unchecked'} </p>*/}
 
-                </fieldset>
+                {/*</fieldset>*/}
 
 
 
@@ -159,7 +159,7 @@ const Practice = () => {
             {/*    */}{/*<p>Selected country is: {countryList}</p>*/}
             {/*    <p>Filtered country: {getFilteredCountry()}</p>*/}
             {/*</form>*/}
-            <StudentName names={names} />
+            {/*<StudentName names={names} />*/}
 
 
         </div>
