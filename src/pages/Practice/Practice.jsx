@@ -3,6 +3,9 @@ import './Practice.css';
 import StudentName from './StudentName';
 import countries from '../../data/country';
 import PracticeApi from './PracticeApi';
+import FetchDictionary from './FetchDictionary';
+import PracticeContext from './PracticeContext';
+
 
 const Practice = () => {
 
@@ -68,7 +71,9 @@ const Practice = () => {
         <div>
             <h1>Practice</h1>
             <div className="practice-container">
-                <PracticeApi />
+                {/*<PracticeApi />*/}
+                {/*<FetchDictionary />*/}
+                <PracticeContext />
             </div>
 
             {/*<form className="practice-container">*/}
