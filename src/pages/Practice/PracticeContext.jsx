@@ -1,14 +1,18 @@
-import { useState, useEffect, useContext } from 'react';
+// import { useState, useEffect, useContext } from 'react';
+// import { useUser } from '../../context/userContext';
 
-const PracticeContext = () => {
+//const PracticeContext = () => {
 
-    //const user = useContext(UserContext);
-    //console.log(user.userName);
-    return (
-        <div>
-            <p>userName</p>
-        </div>
-    )
-}
+//    const user = useUser().getUserData;
+//    const [profileInfo, setProfileInfo] = useState({})
 
-export default PracticeContext;
+
+//    console.log(user);
+//    return (
+//        <div>
+//            <p>profileInfo.title</p>
+//        </div>
+//    )
+//}
+
+//export default PracticeContext;

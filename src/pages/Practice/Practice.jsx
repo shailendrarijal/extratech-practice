@@ -5,6 +5,7 @@ import countries from '../../data/country';
 import PracticeApi from './PracticeApi';
 import FetchDictionary from './FetchDictionary';
 import PracticeContext from './PracticeContext';
+import PracticeThemeContext from './PracticeThemeContext';
 
 
 const Practice = () => {
@@ -73,7 +74,8 @@ const Practice = () => {
             <div className="practice-container">
                 {/*<PracticeApi />*/}
                 {/*<FetchDictionary />*/}
-                <PracticeContext />
+                {/*    <PracticeContext />*/}
+                <PracticeThemeContext />
             </div>
 
             {/*<form className="practice-container">*/}
